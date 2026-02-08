@@ -14,22 +14,42 @@
 </head>
 <body class="bg-[#0F0226] text-white">
   <!-- Navbar -->
-  <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+ 
+<nav class="w-full bg-gradient-to-r from-[#1a0636] to-[#0f0226]">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative">
 
-  <div class="flex items-center gap-2">
-    <img src="assets/logo-navbar.png" alt="TechWave Logo" class="h-8">
-  </div>
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold">
+      <span class="text-white">Tech</span>
+      <span class="text-pink-500">Wave</span>
+    </h1>
 
-  <ul class="hidden lg:flex gap-8 text-sm font-medium">
-    <li class="hover:text-pink-400 cursor-pointer">About</li>
-    <li class="hover:text-pink-400 cursor-pointer">Episodes</li>
-    <li class="hover:text-pink-400 cursor-pointer">Host</li>
-  </ul>
+    <!-- Center Menu -->
+    <ul
+      class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300
+             absolute left-1/2 -translate-x-1/2">
+      <li class="hover:text-white transition cursor-pointer">About</li>
+      <li class="hover:text-white transition cursor-pointer">Episodes</li>
+      <li class="hover:text-white transition cursor-pointer">Host</li>
+    </ul>
 
-  <div class="lg:hidden">
-    <img src="assets/hamburger-menu.png" alt="Menu" class="h-6">
+    <!-- Subscribe Button -->
+    <button
+      class="hidden lg:flex items-center gap-1 px-6 py-2 rounded-full
+             text-sm font-semibold text-white
+             bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600
+             shadow-md hover:scale-105 transition-transform duration-300">
+      Subscribe →
+    </button>
+
+    <!-- Mobile Menu -->
+    <div class="lg:hidden">
+      <img src="assets/hamburger-menu.png" alt="Menu" class="h-6">
+    </div>
+
   </div>
 </nav>
+
 
 
 
@@ -136,7 +156,8 @@
   </h2>
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Card 1-->
+
+    <!-- Card 1-->
     <div class="bg-[#1A0638] p-6 rounded-xl
                 lg:row-span-2 lg:col-span-1">
       <img src="assets/headphone.png" class="h-8 mb-4">
@@ -217,6 +238,8 @@
     <p class="text-gray-400 text-sm">
       Health is one of the most important things in our life. A healthy person can work better and live happily.
     </p>
+    <p class="text-xs text-green-400 mt-2">⏱ 30 min</p>
+
   </div>
 
   <!-- Video 2 -->
@@ -239,6 +262,8 @@
     <p class="text-gray-400 text-sm">
      Insightful discussion on modern technology trends.Practical tips and real-world tech experiences.
     </p>
+    <p class="text-xs text-green-400 mt-2">⏱ 90 min</p>
+
   </div>
 
   <!-- Video 3 -->
@@ -261,11 +286,14 @@
     <p class="text-gray-400 text-sm">
       The metaverse is a virtual world where people can work, study, play games, attend meetings, and socialize using VR (Virtual Reality) and AR (Augmented Reality) technologies.
     </p>
+    <p class="text-xs text-green-400 mt-2">⏱ 47 min</p>
+
   </div>
 
 </div>
 
   </section>
+
   <!-- Host section -->
   <section class="max-w-6xl mx-auto px-6 pb-20">
     <h2 class="text-3xl font-bold text-center mb-12">
@@ -292,10 +320,11 @@
 
   </div>
   </section>
+
   <!-- Footer -->
-  <footer class="bg-cover bg-center py-12 text-center"
+  <footer class="bg-cover bg-center py-16 text-center"
   style="background-image: url('assets/footer-bg.png');">
-    <img src="assets/logo-navbar.png" class="justify-center mb-6 mx-auto h-8">
+    
 
   <div class="flex justify-center gap-6 mb-4">
     <img src="assets/spotify.png" class="h-4">
